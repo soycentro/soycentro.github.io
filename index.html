@@ -32,11 +32,11 @@
 
     <!-- Bootstrap CSS / Color Scheme -->
     <link rel="stylesheet" href="css/default.css" id="theme-color" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!--navigation-->
-    <!--
-    <section class="smart-scroll">
+    <section class="smart-scroll" style="background-color: black;">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-md navbar-dark">
           <a class="navbar-brand heading-black" href="index.html">
@@ -88,31 +88,35 @@
           </div>
         </nav>
       </div>
-    </section> -->
+    </section>
 
     <!--hero header-->
-    <section class="py-7 py-md-0 bg-hero" id="home">
-      <div class="container" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b0/Bogot%C3%A1%2C_centro_tradicional_desde_torre_colpatria_-_panoramio.jpg);
-      background-size: cover; width: max-content">
+    <section  id="home">
+      <div class="hero-container">
         <div class="row vh-md-100">
           <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
-            <h1 class="heading-black text-capitalize" style="color: #1de9b6">
+            <h1 class="heading-black text-capitalize hero-h1" style="color: #1de9b6">
               Soy Centro
             </h1>
 			
-			<h4 style="color: #1de9b6">
+			      <h4 class="hero-h4" style="color: #1de9b6">
               Estudiantes + Seguros
             </h4>
 			
-            <p class="lead py-3" style="color: white">
-              Soy Centro es un emprendimiento social de base tecnologica encaminado a mejorar la seguridad para los estudiantes en el centro de Bogotá.
-            </p>
-            <button
-              class="btn btn-primary d-inline-flex flex-row align-items-center"
-            >
-              Conócenos
-              <em class="ml-2" data-feather="arrow-right"></em>
-            </button>
+            <div class="hero-p">
+              <p class="lead py-3" style="color: white">
+                Soy Centro es un emprendimiento social de base tecnologica encaminado a mejorar la seguridad para los estudiantes en el centro de Bogotá.
+              </p>
+            </div>
+            <div class="hero-button">
+              <button
+                class="btn btn-primary d-inline-flex flex-row align-items-center"
+                onclick="location.href='./figma.html'" type="button"
+                >
+                Conócenos
+                <em class="ml-2" data-feather="arrow-right"></em>
+              </button>
+            </div>
           </div>
         </div>
       </div>
